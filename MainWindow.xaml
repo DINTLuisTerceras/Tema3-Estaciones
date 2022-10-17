@@ -1,0 +1,40 @@
+﻿<Window x:Class="Tema3_Estaciones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_Estaciones"
+        mc:Ignorable="d"
+        Title="Cuatro Estaciones" Height="450" Width="800" Background="LightCyan" Icon="assets/Everaldo-Crystal-Clear-App-games.ico">
+
+        <DockPanel>
+            <TextBlock DockPanel.Dock="Top" FontSize="25" Text="Las 4 estaciones" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="Blue" Offset="0" />
+                        <GradientStop Color="LimeGreen" Offset="1.0" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="5"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <UniformGrid Rows="2" Columns="2">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+                    <Image Source="assets/invierno.jpg"></Image>
+                </ScrollViewer>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+                    <Image Source="assets/primavera.jpg"></Image>
+                </ScrollViewer>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+                    <Image Source="assets/verano.jpg"></Image>
+                </ScrollViewer>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+                    <Image Source="assets/otoño.jpg"></Image>
+                </ScrollViewer>
+            </UniformGrid>
+
+    </DockPanel>
+
+    
+</Window>
